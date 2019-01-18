@@ -7,13 +7,13 @@
   display: none;
 }
 </style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="d3.layout.cloud.js"></script>
 </head>
 	<body>
-		<center><b>Topic 1 Cumulative Project Management Practice (PMP)</b></center><br/>
+		<center><b>Topic 1 Project Management Practice (PMP)</b><br>This includes 9 critical success factors, that will dropdown in the menu on the left.</center><br/>
 <select id="topic1select" onChange="chart1()">
 	<option value=1>Strategic Emphasis</option>
 	<option value=2>Senior Management Review</option>
@@ -37,7 +37,7 @@
 
 
 		<hr/>
-<center><b>Topic 2 Cumulative</b></center><br/>
+<center><b>Topic 2 Critical Incidents that caused conflict and damaged morale.</b></center><br/>
 Conflict
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -246,7 +246,7 @@ Yes Data available, not actioned “drowning in it”
 	</div>
 </div>
 		<hr/>
-		<center><b>Topic 3 Cumulative</b></center><br/>
+		<center><b>Topic 3 Project Results in planning, control and deviations.</b></center><br/>
 How well do each of the project theme results relate to the original plan?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -410,9 +410,9 @@ yes
 </div>
 
 		<hr/>
-		<center><b>Topic 4 Cumulative</b></center><br/>
+		<center><b>Topic 4 Suggestions, Recommendations and how to achieve them for the future</b></center><br/>
 		<center>Recommendations</center>
-What
+Recommendations for others
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4recommendwhat" width="300" height="300"></canvas></center>
@@ -433,7 +433,7 @@ What
 	</ul>
 	</div>
 </div>
-Automate
+What is repetitive that we can automate?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4recommendautomate" width="300" height="300"></canvas></center>
@@ -454,8 +454,7 @@ Automate
 	</ul>
 	</div>
 </div>
-
-Skills
+What skills were missing?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4recommendskills" width="300" height="300"></canvas></center>
@@ -476,7 +475,7 @@ Skills
 	</ul>
 	</div>
 </div>
-Understand
+Did themes add value for BHGE?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4recommendunderstand" width="300" height="300"></canvas></center>
@@ -492,7 +491,7 @@ Understand yes, Tools, people, time invested is important, budget
 </div>
 
 		<center>Suggestions</center>
-What
+Suggestions to minimize deviations
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4suggestionswhat" width="300" height="300"></canvas></center>
@@ -512,8 +511,7 @@ Standardize & Simplify Specs More Design Reviews Include supply base during Eng.
 	</ul>
 	</div>
 </div>
-
-Change Faster
+Suggestions to discover necessary changes faster
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4suggestionschangefaster" width="300" height="300"></canvas></center>
@@ -533,7 +531,7 @@ Piloting, live testing with positive feedback prior to execute.
 	</ul>
 	</div>
 </div>
-Suggest
+What suggestions would you make by theme in this organization?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
 <center><canvas id="topic4suggestionssugg" width="300" height="300"></canvas></center>
@@ -557,7 +555,7 @@ Customizing tools for each department as needed
 </div>
 
 		<hr/>
-		Topic 5 Cumulative<br/>
+		Topic 5 Group Analysis of topic 1<br/>
 What did not go well?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -696,7 +694,7 @@ Executive sponsor with identified champions in the functional groups
 	</div>
 </div>
 		<hr/>
-		<center><b>Topic 6 Cumulative</b></center><br/>
+		<center><b>Topic 6 What did you learn from the following themes?</b></center><br/>
 Digitalization
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;"> 
@@ -950,19 +948,6 @@ topic3chart4Labels = ['Rework','Tools','Silos','Change orders'];
 
 topic3chart5data = [1,1,2,2,1,1,1,1];
 topic3chart5Labels = ['Electrical','Change ','Digitalization','Design','Specs','First', 'Skid','Train'];
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 topic3chart6data = [1,2,1,1,1,1,1,1,1,1,1];
@@ -1226,7 +1211,7 @@ wordcloud(Object.keys(appmod), "#wc4", appmod,"#wc4pg" );
 wordcloud(Object.keys(ruok), "#wc5", ruok,"#wc5pg" );
 
 </script>
-<small>©2019 <a href="http://www.softskillslearning.ie">BIS BUSINESS INTEGRATED SOLUTIONS</a></small><br><a href="http://www.allsorter.com"><img src="all-sorter-logo2.png" height=25px></img></a>
+<small>©2019 <a href="http://www.softskillslearning.ie">BIS BUSINESS INTEGRATED SOLUTIONS</a></small><a href="http://www.allsorter.com"><img src="all-sorter-logo2.png" height=25px style="float:right"></img></a>
 
 	</body>
 </html>
