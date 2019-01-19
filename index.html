@@ -7,13 +7,13 @@
   display: none;
 }
 </style>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="d3.layout.cloud.js"></script>
 </head>
 	<body>
-		<center><b>Topic 1 Project Management Practice (PMP)</b><br>This includes 9 critical success factors, that will dropdown in the menu on the left.</center><br/>
+		<center><b><span id="pmp">Topic 1 Project Management Practice (PMP)</span></b><br>This includes 9 critical success factors, that will dropdown in the menu on the left.</center><br/>
 <select id="topic1select" onChange="chart1()">
 	<option value=1>Strategic Emphasis</option>
 	<option value=2>Senior Management Review</option>
@@ -37,7 +37,7 @@
 
 
 		<hr/>
-<center><b>Topic 2 Critical Incidents that caused conflict and damaged morale.</b></center><br/>
+<center><b><span id="criticalincident">Topic 2 Critical Incidents that caused conflict and damaged morale.</span></b></center><br/>
 Conflict
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -246,7 +246,7 @@ Yes Data available, not actioned “drowning in it”
 	</div>
 </div>
 		<hr/>
-		<center><b>Topic 3 Project Results in planning, control and deviations.</b></center><br/>
+		<center><b><span id="projresults">Topic 3 Project Results in planning, control and deviations.</span></b></center><br/>
 How well do each of the project theme results relate to the original plan?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -410,7 +410,7 @@ yes
 </div>
 
 		<hr/>
-		<center><b>Topic 4 Suggestions, Recommendations and how to achieve them for the future</b></center><br/>
+		<center><b><span id="futuresugg">Topic 4 Suggestions, Recommendations and how to achieve them for the future</span></b></center><br/>
 		<center>Recommendations</center>
 Recommendations for others
 <div style="width: 100%; overflow: hidden;">
@@ -555,7 +555,7 @@ Customizing tools for each department as needed
 </div>
 
 		<hr/>
-		Topic 5 Group Analysis of topic 1<br/>
+		<center><b><span id="grpanalysis">Topic 5 Group Analysis of topic 1</span></b></center><br/>
 What did not go well?
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;">
@@ -694,7 +694,7 @@ Executive sponsor with identified champions in the functional groups
 	</div>
 </div>
 		<hr/>
-		<center><b>Topic 6 What did you learn from the following themes?</b></center><br/>
+		<center><b><span id="learned">Topic 6 What did you learn from the following themes?</span></b></center><br/>
 Digitalization
 <div style="width: 100%; overflow: hidden;">
     <div style="width: 600px; float: left;"> 
