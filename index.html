@@ -773,16 +773,46 @@ function chart1() {
 
 	$("#topic1list").empty();
 
-	var questions = ['Were project theme goals attained?','Were the project theme goals clear?','Did the team create a goal statement that was specific, measurable, time based for project themes?','Did you understand how the project themes would add value to the project?','Were project theme deadlines truly negotiated with project sponsors?','Did top management support the project themes throughout its duration?','Did I feel like the senior management team fully understood the project theme processes?','','Was a detailed plan developed for each project theme?','Was the core team involved in the development of each project themes plan?','Is there is a method for updating the proect themes plans?', 'Did each project theme have a proper budget?'];
-	var firstQNum = ((n-1)*4)%12;
+	var questions = [
+['Were project theme goals attained?','Were the project theme goals clear?','Did the team create a goal statement that was specific, measurable, time based for project themes?','Did you understand how the project themes would add value to the project?'],['Were project theme deadlines truly negotiated with project sponsors?','Did top management support the project themes throughout its duration?','Did I feel like the senior management team fully understood the project theme processes?'],['Was a detailed plan developed for each project theme?','Was the core team involved in the development of each project themes plan?','Is there is a method for updating the proect themes plans?', 'Did each project theme have a proper budget?'],
+
+
+['Was the customer, end user or customer representative group, involved early/at all, in the range of theme processes?',
+'Was the customer informed of any themes progress, changes, set backs/failures, delays?',
+'Were customers\' themes expectations solicited, included, met, exceeded?',
+'Did I know the problems the customer / end user was trying to solve?'],[
+'Was a sub team established for each theme?',
+'Did it meet regularly with the sub team management?',
+'If yes, did it remain together for the entire project?',
+'Were sub team members continually aware of what was expected of them by theme?'],[
+'Were schedule slips met with immediate outrage?',
+'Did schedule slips lead to working hours longer than normally expected?',
+'The core team worked as a team to help the sub teams succeed?',
+'There is a person or group in charge of improving each theme in this organization?'],[
+'Was \'theme\' communication sufficient?',
+'The themes plans were communicated to all core team members?',
+'Sub team members could communicate easily with each other?',
+'Did I feel like I could speak truth to power?'],[
+'Did team members know whom to contact if there was delay or other problem?',
+'Were team members aware of the deadlines for activities?','Was updated theme information readily available to all stakeholders?'],[
+'A consistent project management process was used for each theme?',
+'This project had a single project manager appointed?',
+'The organization will reward the team members if they are successful on this project?',
+'The organizational reward system supports teamwork on this project?']
+
+];
+
+
+	var quests = questions[n-1];
+	
 	var html = "";
-	for (k=firstQNum; k<=firstQNum+3; k++) {
-		if (questions[k] !== "") 
-		html+="<li>" + questions[k] + "</li>";
+
+	for (k = 0; k < quests.length;k++){
+		html += "<li>" + quests[k] + "</li>";
 	}
 	$("#topic1list").html(html);
 
-	
+//	console.log(n);
 
 
 	$("#topic1svg").empty();
@@ -1091,7 +1121,7 @@ var digitalization = {
 "deviation" : "Manage deviation<br/>Be agile & flexible. Need auditing & monitoring of the DP.  Be ready to solve issues as they arise",
 "action" : "Multiple personal tools to manage same information/action plan<br/>Improve project team bottom up process to collect needs and daily repetitive activities that can drive the Dig. Opportunities, Share new technology & merging opportunities Share new technology & merging opportunities",
 "Investigate" : "Investigate the Digitalization for site<br/>How we are receiving, communicating the information requests (RFI’s)",
-"Proect" : "Delivery Plan for Remaining Project<br/> Is there any Digitalization plan for what is left to deliver for remaining of the project at site.",
+"Project" : "Delivery Plan for Remaining Project<br/> Is there any Digitalization plan for what is left to deliver for remaining of the project at site.",
 "SN Material" : "Develop SN Material Order Process (Btwn. Site to HSC)<br/>Streamline Service Now process for Sales Ordering of Material to site using HSC",
 "As Builts" : "Digitalization of information at site for the As Builts<br/>Set Requirements: Who, When, etc.",
 "Site" : "Elba Site Work Shop for Digitalization<br/>Opportunity for improvements at Elba",
